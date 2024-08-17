@@ -5,3 +5,12 @@ THEN
 	RESPONSE #100
 		ActionOverride("WInerys",StartDialogueNoSet(Player1))
 END
+
+IF
+	Global("IllaseraScene2","GLOBAL",1)
+	RealGlobalTimerExpired("WINerysPlayTimer","GLOBAL")
+THEN
+	RESPONSE #100
+		ActionOverride("WInerys",PlaySound("WIPUBSC"))
+		RealSetGlobalTimer("WINerysPlayTimer","GLOBAL",10)
+END

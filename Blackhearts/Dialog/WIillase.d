@@ -3381,6 +3381,14 @@ END
 		++ @2314 + il15.59
 		++ @2315 + il15.60
 		++ @2316 + il15.61
+		++ ~The song is over... Nerys, do you think you can play it again ?~ DO ~SetGlobal("WINerysPlay","GLOBAL",1)~ EXTERN WInerys ne15.9
+
+CHAIN WIillase il15.421
+	~...~
+END
+		++ @2314 + il15.59
+		++ @2315 + il15.60
+		++ @2316 + il15.61
 
 CHAIN WIillase il15.43
 	@2317 EXTERN WIillase il15.62
@@ -3445,6 +3453,14 @@ END
 		++ @2337 + il15.63
 		++ @2338 + il15.64
 		++ @2339 + il15.64
+		++ ~The song is over... Nerys, do you think you can play it again ?~ DO ~SetGlobal("WINerysPlay","GLOBAL",2)~ EXTERN WInerys ne15.9
+
+CHAIN WIillase il15.621
+	~...~
+END
+		++ @2337 + il15.63
+		++ @2338 + il15.64
+		++ @2339 + il15.64
 
 CHAIN WIillase il15.63
 	@2340
@@ -3487,6 +3503,13 @@ END
 
 CHAIN WIillase il15.70
 	@2358
+END
+		++ @2356 + il15.74
+		++ @2357 + il15.75
+		++ ~The song is over... Nerys, do you think you can play it again ?~ DO ~SetGlobal("WINerysPlay","GLOBAL",3)~ EXTERN WInerys ne15.9
+
+CHAIN WIillase il15.701
+	~...~
 END
 		++ @2356 + il15.74
 		++ @2357 + il15.75
@@ -3550,6 +3573,14 @@ CHAIN WIillase il15.78.1
 	= @2380
 	= @2381
 	= @2382
+END
+		++ @2383 + il15.78.2
+		++ @2384 + il15.78.3
+		++ @2385 + il15.78.4
+		++ ~The song is over... Nerys, do you think you can play it again ?~ DO ~SetGlobal("WINerysPlay","GLOBAL",4)~ EXTERN WInerys ne15.9
+
+CHAIN WIillase il15.781.1
+	~...~
 END
 		++ @2383 + il15.78.2
 		++ @2384 + il15.78.3
@@ -3621,6 +3652,16 @@ END
 		++ @2420 + il15.84
 		++ @2421 + il15.86
 		++ @2422 + il15.85
+		++ ~The song is over... Nerys, do you think you can play it again ?~ DO ~SetGlobal("WINerysPlay","GLOBAL",5)~ EXTERN WInerys ne15.9
+
+CHAIN WIillase il15.821
+	~...~
+END
+		+ ~Class(Player1,BARD_ALL)~ + @2418 + il15.83
+		++ @2419 + il15.84
+		++ @2420 + il15.84
+		++ @2421 + il15.86
+		++ @2422 + il15.85
 
 CHAIN WIillase il15.83
 	@2423 EXTERN WIillase il15.87
@@ -3681,6 +3722,19 @@ CHAIN IF ~Global("BHBG1ImoenJoin","GLOBAL",1) Global("IllaseraScene2","GLOBAL",1
 CHAIN WIillase il15.97
 	@2449
 	== %IMOEN_JOINED% IF ~InParty("%IMOEN_DV%") InMyArea("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @2450
+END
+		++ @2451 + il15.99
+		++ @2452 + il15.99
+		++ @2453 + il15.99
+		++ @2454 + il15.100
+		++ @2455 + il15.100
+		++ @2456 + il15.100
+		++ @2457 + il15.99
+		++ @2458 + il15.100
+		++ ~The song is over... Nerys, do you think you can play it again ?~ DO ~SetGlobal("WINerysPlay","GLOBAL",6)~ EXTERN WInerys ne15.9
+
+CHAIN WIillase il15.971
+	~...~
 END
 		++ @2451 + il15.99
 		++ @2452 + il15.99

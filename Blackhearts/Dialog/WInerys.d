@@ -336,6 +336,16 @@ CHAIN WInerys ne15.7
 CHAIN WInerys ne15.8
 	@3066 DO ~PlaySound("WIPUBSC")~ EXTERN WIillase il15.29
 
+CHAIN WInerys ne15.9
+	~Yes I can !~ DO ~PlaySound("WIPUBSC") RealSetGlobalTimer("WINerysPlayTimer","GLOBAL",10)~
+END
+		+ ~Global("WINerysPlay","GLOBAL",1)~ + ~Where were we... Ah yes~ EXTERN WIillase il15.421
+		//+ ~Global("WINerysPlay","GLOBAL",2)~ + ~Where were we... Ah yes~ EXTERN WIillase il15.621 // this one don4t work, don't know why.
+		+ ~Global("WINerysPlay","GLOBAL",3)~ + ~Where were we... Ah yes~ EXTERN WIillase il15.701
+		+ ~Global("WINerysPlay","GLOBAL",4)~ + ~Where were we... Ah yes~ EXTERN WIillase il15.781.1
+		+ ~Global("WINerysPlay","GLOBAL",5)~ + ~Where were we... Ah yes~ EXTERN WIillase il15.821
+		+ ~Global("WINerysPlay","GLOBAL",6)~ + ~Where were we... Ah yes~ EXTERN WIillase il15.971
+
 // Nerys translated book
 
 CHAIN IF ~Global("BHBG1Quest","GLOBAL",21) Global("WIHarperBook","GLOBAL",2)~ THEN WInerys ne22.0
