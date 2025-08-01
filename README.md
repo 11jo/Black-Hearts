@@ -8,6 +8,7 @@
 ### Compatibility :
 
 - Black Hearts need to be installed before [Brandock the Mage](https://github.com/Gitjas/Brandock_the_Mage?tab=readme-ov-file)
+- If the mod BP-BGT Worldmap is used Black Hearts need to be installed before [BP-BGT-Worldmap](https://github.com/Spellhold-Studios/BP-BGT-Worldmap)
 
 
 ### Introduction :
