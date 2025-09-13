@@ -2,6 +2,20 @@
 ## Black Hearts Part 1 and Part 2
 *****************************************
 
+[![Release](https://img.shields.io/github/v/release/A-Wizard-Did-It/Black-Hearts?include_prereleases&color=41788a)](https://github.com/A-Wizard-Did-It/Black-Hearts/releases)
+[![Published](https://img.shields.io/github/release-date-pre/A-Wizard-Did-It/Black-Hearts?display_date=published_at&label=published&color=014a69)](https://github.com/A-Wizard-Did-It/Black-Hearts/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/A-Wizard-Did-It/Black-Hearts/total?color=41788a)](https://github.com/A-Wizard-Did-It/Black-Hearts/releases)
+
+[![Language](https://img.shields.io/badge/language-english%20%7C%20Chinese-014a69)](https://github.com/A-Wizard-Did-It/Black-Hearts/releases)
+[![Games](https://img.shields.io/badge/games-BGT%20%a0%20BG%3AEE%20%a0%20EET-41788a)](https://github.com/A-Wizard-Did-It/Black-Hearts/releases)
+
+<!--
+
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FA-Wizard-Did-It%2FBlack-Hearts&countColor=41788a&style=flat)
+
+[![Platform](https://img.shields.io/badge/platform-Windows%20%a0%20macOS%20%a0%20Linux%20%a0%20Project%20Infinity-014a69)](https://github.com/A-Wizard-Did-It/Black-Hearts/releases)
+-->
+
 #### A mod for BGEE, SoD, BG2EE and EET!
 
 
