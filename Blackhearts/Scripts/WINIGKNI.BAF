@@ -8,7 +8,7 @@ THEN
 END
 
 IF
-	Global("BHBG1Quest","GLOBAL",13)
+	GlobalGT("BHBG1Quest","GLOBAL",12)
 	AreaCheck("%CentralBaldursGate%")
 THEN
 	RESPONSE #100
