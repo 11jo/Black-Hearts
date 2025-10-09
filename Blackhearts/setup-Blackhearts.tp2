@@ -62,16 +62,16 @@ ADD_JOURNAL TITLE (@7148) @6116 @6138 @6330 @6331 @6341 @6460 @6461 @6462 @6571 
 // Special compatibility with Gorgon Eye
 
 	ACTION_IF (NOT MOD_IS_INSTALLED ~SETUP-GORGON.TP2~ 0) BEGIN
-	
+
 		COMPILE ~Blackhearts/DialogPatch/JOh_WI.d~
 		PRINT ~Patch Alatos dialog for compatibility with Gorgon Eye
 		~
-		
+
 	END ELSE BEGIN
-	
+
 		PRINT ~ALATOS.dlg is already patched by Gorgon Eye mod for compatibility
 		~
-		
+
 END
 
 // Special compatibility with Gorgon Eye

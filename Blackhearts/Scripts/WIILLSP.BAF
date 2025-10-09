@@ -30,6 +30,7 @@ IF
 	HPPercentLT(Myself,10)
 	!Dead("Sarevok")
 	!StateCheck("WIILLASE",CD_STATE_NOTVALID)
+	See(Player1)
 THEN
 	RESPONSE #100	
 		SetGlobal("BHBG1QuestFinal","%Undercity_TempleofBhaal%",2)
@@ -43,10 +44,10 @@ IF
 	Global("BHBG1QuestFinal","%Undercity_TempleofBhaal%",1)
 	Dead("Sarevok")
 	!StateCheck("WIILLASE",CD_STATE_NOTVALID)
+	See(Player1)
 THEN
 	RESPONSE #100	
 		SetGlobal("BHBG1QuestFinal","%Undercity_TempleofBhaal%",2)
-		MoveToObject(Player1)
 		ChangeEnemyAlly(Myself,NEUTRAL)
 		DisplayStringHead(Myself,@5032)
 		SmallWait(3)
