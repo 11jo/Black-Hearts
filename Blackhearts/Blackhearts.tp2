@@ -1,7 +1,7 @@
 BACKUP ~weidu_external/Blackhearts/Backup~
 AUTHOR ~AWizardDidIt~
 
-VERSION ~v2.03~
+VERSION ~v2.04~
 
 ALWAYS
 
@@ -22,9 +22,8 @@ END
 
 END	
 
-LANGUAGE
-	~English~
-	~English~
+LANGUAGE ~English~
+         ~English~
 
 ~Blackhearts/tra/English/BHBG1setup.tra~
 ~Blackhearts/tra/English/BHBG1names.tra~
@@ -49,6 +48,23 @@ LANGUAGE ~Simplified Chinese (translation: Lzw104522773)~
 ~Blackhearts/tra/schinese/BHBG1quests.tra~
 ~Blackhearts/tra/schinese/BHBG1items.tra~
 ~Blackhearts/tra/schinese/BHBG1script.tra~
+
+
+LANGUAGE ~Portugues (translation: DarthNihilus530)~
+         ~portugues~
+
+~Blackhearts/tra/English/BHBG1setup.tra~
+~Blackhearts/tra/English/BHBG1names.tra~
+~Blackhearts/tra/English/BHBG1sounds.tra~
+~Blackhearts/tra/English/BHBG1quests.tra~
+~Blackhearts/tra/English/BHBG1items.tra~
+~Blackhearts/tra/English/BHBG1script.tra~
+~Blackhearts/tra/portugues/BHBG1setup.tra~
+~Blackhearts/tra/portugues/BHBG1names.tra~
+~Blackhearts/tra/portugues/BHBG1sounds.tra~
+~Blackhearts/tra/portugues/BHBG1quests.tra~
+~Blackhearts/tra/portugues/BHBG1items.tra~
+~Blackhearts/tra/portugues/BHBG1script.tra~
 
 
 BEGIN @1

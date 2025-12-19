@@ -228,7 +228,7 @@ For any issues had with the mod, make a report through github or contact me at m
 	- Addition of a few more quest journal entries for added clarity when pursuing the Night Knives. 
 
 - Version 2.01
-  	- Update Cythandria's script to correctly set her active variable after death
+  	- Update Cythandria's script to correctly set her active variable after death.
 
 - Version 2.02
   	- Fix to harper manor info points.
@@ -236,8 +236,27 @@ For any issues had with the mod, make a report through github or contact me at m
 - Version 2.03
   	- Chinese translation for SOD by Lzw104522773
   	- Add different BG game icons to SoDMap for Black-Hearts areas.
-  	- Fix to issue causing added spells to appear in divine spell book
+  	- Fix to issue causing added spells to appear in divine spell book.
   	- Small change to quest flow for narrative improvement.
+
+- Version 2.04
+  	- Brazilian Portuguese translation by DarthNihilus530.
+  	- Make Astral Gemstones critical Items.
+  	- Blane.d and bran.d rewrite.
+  	- Tamoko move for EET.
+	- WIRIEZEN edge cases.
+	- Irrelevant cursors icons for traps.
+	- Misplaced tra reference for WISTAF03.itm
+	- Remove duplicated `@6295` for `@6296` in WICYNTHA.d.
+	- `@6357` tam3.10 edit.
+	- Safana / Illasera banters fix.
+	- Nerys leave Elfsong tavern in SoD.
+	- Make sure night mask leave central BG.
+	- Missing %IMOEN_DV%.
+	- Remove BDMISC04.it from WIOOZE.cre.
+	- Lenght for DIALOG / SCRIPT_ / DEATHVAR.
+	- Rename setup-Blackhearts.tp2 to Blackhearts.tp2.
+	- WeiduModPackager
 
 
 **Special thanks for reporting issues and helping :**
