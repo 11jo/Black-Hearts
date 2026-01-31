@@ -2989,9 +2989,7 @@ CHAIN WIillase il8.12
 
 // Section 10 - Quest 8
 
-CHAIN IF ~OR(2)
-				Global("BHBG1Quest","GLOBAL",10)
-				Dead("WIRIEZEN")~ THEN WIillase il10.0
+CHAIN IF ~Global("BHBG1Quest","GLOBAL",10)~ THEN WIillase il10.0
 	@2134
 END
 		++ @2135 + il10.1

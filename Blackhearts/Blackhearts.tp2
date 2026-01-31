@@ -1,7 +1,7 @@
 BACKUP ~weidu_external/Blackhearts/Backup~
 AUTHOR ~AWizardDidIt~
 
-VERSION ~v2.04~
+VERSION ~v2.05~
 
 ALWAYS
 
@@ -20,7 +20,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 			OUTER_SPRINT "ISW1H09" "ISW1H09"
 END
 
-END	
+END
 
 LANGUAGE ~English~
          ~English~
@@ -130,13 +130,13 @@ LAF HANDLE_AUDIO END
 COPY_EXISTING ~%CoastWay%.are~ ~override~
   LPF fj_are_structure
     INT_VAR
-    fj_type         = 2   
+    fj_type         = 2
     fj_box_left     = 4513
     fj_box_top      = 1456
-    fj_box_right    = 4644 
-    fj_box_bottom   = 1556 
+    fj_box_right    = 4644
+    fj_box_bottom   = 1556
     fj_cursor_idx   = 42
-    fj_vertex_0     = 4513 + (1456 << 16) 
+    fj_vertex_0     = 4513 + (1456 << 16)
     fj_vertex_1     = 4644 + (1456 << 16)
     fj_vertex_2     = 4644 + (1556 << 16)
     fj_vertex_3     = 4513 + (1556 << 16)
@@ -146,12 +146,12 @@ COPY_EXISTING ~%CoastWay%.are~ ~override~
     fj_destination_area = WI0002
     fj_destination_name = EXIT1900
   END
- 
+
    LPF fj_are_structure
     INT_VAR
-    fj_loc_x       = 4575 
-    fj_loc_y       = 1482 
-    fj_orientation = 0  
+    fj_loc_x       = 4575
+    fj_loc_y       = 1482
+    fj_orientation = 0
     STR_VAR
     fj_structure_type = entrance
     fj_name           = EXITWi0002
@@ -161,58 +161,58 @@ COPY_EXISTING ~%CoastWay%.are~ ~override~
 COPY_EXISTING ~%Farmlands%.are~ ~override~
   LPF fj_are_structure
     INT_VAR
-    fj_type         = 2    
-    fj_box_left     = 2304  
+    fj_type         = 2
+    fj_box_left     = 2304
     fj_box_top      = 8
-    fj_box_right    = 3408 
+    fj_box_right    = 3408
     fj_box_bottom   = 123
-    fj_cursor_idx   = 34   
-    fj_vertex_0     = 2304 + (8 << 16) 
+    fj_cursor_idx   = 34
+    fj_vertex_0     = 2304 + (8 << 16)
     fj_vertex_1     = 3408 + (8 << 16)
     fj_vertex_2     = 3408 + (123 << 16)
     fj_vertex_3     = 2304 + (123 << 16)
     STR_VAR
     fj_structure_type   = region
-    fj_name             = WIgorgeEnt 
+    fj_name             = WIgorgeEnt
     fj_destination_area = WI0003
-    fj_destination_name = Entrance1 
+    fj_destination_name = Entrance1
   END
 
    LPF fj_are_structure
     INT_VAR
-    fj_loc_x       = 2550 
-    fj_loc_y       = 177 
-    fj_orientation = 0   
+    fj_loc_x       = 2550
+    fj_loc_y       = 177
+    fj_orientation = 0
     STR_VAR
     fj_structure_type = entrance
     fj_name           = WIfarmtrav
-  END 
+  END
   ADD_MAP_NOTE #2857 #66 ~gray~ @79
 
 COPY_EXISTING ~%ESewers%.are~ ~override~
   LPF fj_are_structure
     INT_VAR
-    fj_type         = 2    
+    fj_type         = 2
     fj_box_left     = 36
     fj_box_top      = 2522
     fj_box_right    = 355
     fj_box_bottom   = 2685
     fj_cursor_idx   = 42
-    fj_vertex_0     = 36 + (2522 << 16) 
+    fj_vertex_0     = 36 + (2522 << 16)
     fj_vertex_1     = 355 + (2522 << 16)
     fj_vertex_2     = 355 + (2685 << 16)
     fj_vertex_3     = 36 + (2685 << 16)
     STR_VAR
     fj_structure_type   = region
-    fj_name             = WISewExit 
+    fj_name             = WISewExit
     fj_destination_area = WI0006
-    fj_destination_name = Entrance1 
+    fj_destination_name = Entrance1
   END
 
    LPF fj_are_structure
     INT_VAR
     fj_loc_x       = 523
-    fj_loc_y       = 2694 
+    fj_loc_y       = 2694
     fj_orientation = 12
     STR_VAR
     fj_structure_type = entrance
@@ -225,17 +225,17 @@ COPY_EXISTING ~WI0002.wed~ ~override~
 COPY_EXISTING ~WI0002.are~ ~override~
   LPF  ALTER_AREA_REGION
     STR_VAR
-    region_name              = Door1900 
+    region_name              = Door1900
     destination_area =  EVAL ~%CoastWay%~
   END
 
 COPY_EXISTING ~WI0003.are~ ~override~
   LPF  ALTER_AREA_REGION
     STR_VAR
-    region_name              = Travel 
+    region_name              = Travel
     destination_area =  EVAL ~%Farmlands%~
   END
-  
+
 COPY_EXISTING ~WI0004.wed~ ~override~
 	WRITE_ASCIIE 0x24 ~%NWBaldursGate_PheirkasHouse_L1%~ (8)
 
@@ -244,12 +244,12 @@ COPY_EXISTING ~WI0004.are~ ~override~
 	WRITE_ASCIIE 0x94 ~%NWBaldursGate_PheirkasHouse_L1%~ (8) // Area script BG0167 / AR0167
   LPF  ALTER_AREA_REGION
     STR_VAR
-    region_name              = Door0100 
+    region_name              = Door0100
     destination_area =  EVAL ~%NWBaldursGate%~
   END
   LPF  ALTER_AREA_REGION
     STR_VAR
-    region_name              = Door0168 
+    region_name              = Door0168
     destination_area =  EVAL ~%NWBaldursGate_PheirkasHouse_L2%~
   END
 
@@ -257,14 +257,14 @@ COPY_EXISTING ~WI0005.are~ ~override~
 	WRITE_ASCIIE 0x08 ~%BaldursGateDocks_NoraleesWarehouse%~ (8)
   LPF  ALTER_AREA_REGION
     STR_VAR
-    region_name              = Door1200 
+    region_name              = Door1200
     destination_area =  EVAL ~%BaldursGateDocks%~
   END
 
 COPY_EXISTING ~WI0006.are~ ~override~
   LPF  ALTER_AREA_REGION
     STR_VAR
-    region_name              = SewerExit 
+    region_name              = SewerExit
     destination_area =  EVAL ~%ESewers%~
   END
 
@@ -377,10 +377,10 @@ COPY ~Blackhearts/items/WISW1H01.eff~ ~override/WISW1H01.eff~
 COPY ~Blackhearts/items/WISW1H01.itm~ ~override/WISW1H01.itm~ // humanbane
 	SAY NAME2 @22
 	SAY DESC @23
-	LPF ALTER_ITEM_HEADER 
-		INT_VAR 
+	LPF ALTER_ITEM_HEADER
+		INT_VAR
 			check_headers = 1
-		STR_VAR 
+		STR_VAR
 			icon = ~WISW1H01~
 	END
 
@@ -392,10 +392,10 @@ COPY ~Blackhearts/items/WISW1H02.itm~ ~override/WISW1H02.itm~  // bloodletting b
 	SAY UNIDENTIFIED_DESC #226713
 	SAY DESC @63
 	WRITE_ASCIIE 0x10 ~%MISC56%~ (8)
-	LPF ALTER_ITEM_HEADER 
-		INT_VAR 
+	LPF ALTER_ITEM_HEADER
+		INT_VAR
 			check_headers = 1
-		STR_VAR 
+		STR_VAR
 			icon = ~WISW1H02~
 	END
 
@@ -405,10 +405,10 @@ COPY ~Blackhearts/items/WISW1H02.itm~ ~override/WISW1H02.itm~  // bloodletting b
 	SAY NAME2 @62
 	SAY DESC @63
 	WRITE_ASCIIE 0x10 ~%MISC56%~ (8)
-	LPF ALTER_ITEM_HEADER 
-		INT_VAR 
+	LPF ALTER_ITEM_HEADER
+		INT_VAR
 			check_headers = 1
-		STR_VAR 
+		STR_VAR
 			icon = ~WISW1H02~
 	END
 
@@ -421,19 +421,19 @@ COPY ~Blackhearts/items/WIBOOK01.itm~ ~override/WIBOOK01.itm~
 	SAY UNIDENTIFIED_DESC @27
 	SAY DESC @27
 
-COPY ~Blackhearts/items/WIBOOK02.itm~ ~override/WIBOOK02.itm~	
+COPY ~Blackhearts/items/WIBOOK02.itm~ ~override/WIBOOK02.itm~
 	SAY NAME1 @33
 	SAY NAME2 @33
 	SAY UNIDENTIFIED_DESC @34
 	SAY DESC @34
 
-COPY ~Blackhearts/items/WIBOOK03.itm~ ~override/WIBOOK03.itm~	
+COPY ~Blackhearts/items/WIBOOK03.itm~ ~override/WIBOOK03.itm~
 	SAY NAME1 @35
 	SAY NAME2 @35
 	SAY UNIDENTIFIED_DESC @36
 	SAY DESC @36
 
-COPY ~Blackhearts/items/WIMISC01.itm~ ~override/WIMISC01.itm~	
+COPY ~Blackhearts/items/WIMISC01.itm~ ~override/WIMISC01.itm~
 	SAY NAME1 @42
 	SAY NAME2 @42
 	SAY UNIDENTIFIED_DESC @43
@@ -482,8 +482,8 @@ COPY ~Blackhearts/items/WISW1H03.itm~ ~override/WISW1H03.itm~
 	SAY NAME2 @92
 	SAY DESC @93
 	WRITE_ASCIIE 0x3a ~%ISW1H09%~ (8)
-	LPF ALTER_ITEM_HEADER 
-		INT_VAR 
+	LPF ALTER_ITEM_HEADER
+		INT_VAR
 			check_headers = 1
 	STR_VAR
 			icon = EVAL ~%ISW1H09%~
@@ -494,23 +494,23 @@ COPY_EXISTING ~SCRL2I.ITM~ ~override/WISCRL01.itm~
 	SAY NAME2 @90
 	SAY DESC @91
 	SAY UNIDENTIFIED_DESC @91
-	
+
 COPY ~Blackhearts/items/WISPIDSW.itm~ ~override/WISPIDSW.itm~
 
 COPY ~Blackhearts/items/WIRING02.itm~ ~override/WIRING02.itm~
 	SAY NAME2 @94
 	SAY DESC @95
 
-COPY ~Blackhearts/items/WIRING03.itm~ ~override/WIRING03.itm~	
+COPY ~Blackhearts/items/WIRING03.itm~ ~override/WIRING03.itm~
 
-COPY ~Blackhearts/items/WIRING04.itm~ ~override/WIRING04.itm~	
+COPY ~Blackhearts/items/WIRING04.itm~ ~override/WIRING04.itm~
 
 COPY ~Blackhearts/items/WIBOOK05.itm~ ~override/WIBOOK05.itm~
 	SAY NAME1 @103
 	SAY NAME2 @103
 	SAY DESC @104
 	SAY UNIDENTIFIED_DESC @104
-	
+
 	ACTION_IF GAME_IS ~eet~ BEGIN
 
 COPY ~Blackhearts/items/WIHELM02.itm~ ~override/WIHELM02.itm~
@@ -518,7 +518,7 @@ COPY ~Blackhearts/items/WIHELM02.itm~ ~override/WIHELM02.itm~
 	SAY NAME2 @108
 	SAY UNIDENTIFIED_DESC #230683
 	SAY DESC @109
-	
+
 	END ELSE BEGIN
 
 COPY ~Blackhearts/items/WIHELM02.itm~ ~override/WIHELM02.itm~
@@ -548,10 +548,10 @@ COPY_EXISTING ~SCRL2I.ITM~ ~override/WISCRL02.itm~
 COPY ~Blackhearts/items/WIMACE01.itm~ ~override/WIMACE01.itm~
 	SAY NAME2 @116
 	SAY DESC @117
-	LPF ALTER_ITEM_HEADER 
-		INT_VAR 
+	LPF ALTER_ITEM_HEADER
+		INT_VAR
 			check_headers = 1
-		STR_VAR 
+		STR_VAR
 			icon = ~WIBLUN01~
 	END
 
@@ -585,10 +585,10 @@ END
 COPY ~Blackhearts/items/WISTAF01.itm~ ~override/WISTAF01.itm~
 	SAY NAME2 @141
 	SAY DESC @142
-	LPF ALTER_ITEM_HEADER 
-		INT_VAR 
+	LPF ALTER_ITEM_HEADER
+		INT_VAR
 			check_headers = 1
-		STR_VAR 
+		STR_VAR
 			icon = ~WISTAF01~
 	END
 
@@ -598,10 +598,10 @@ COPY ~Blackhearts/items/WISW1H05.itm~ ~override/WISW1H05.itm~
 	SAY DESC @147
 	SAY UNIDENTIFIED_DESC @3326
 	WRITE_ASCIIE 0x10 ~%MISC56%~ (8)
-	LPF ALTER_ITEM_HEADER 
-		INT_VAR 
+	LPF ALTER_ITEM_HEADER
+		INT_VAR
 			check_headers = 1
-		STR_VAR 
+		STR_VAR
 			icon = ~WISW1H03~
 	END
 
@@ -611,10 +611,10 @@ COPY ~Blackhearts/items/WISW1H06.itm~ ~override/WISW1H06.itm~
 	SAY DESC @149
 	SAY UNIDENTIFIED_DESC @3324
 	WRITE_ASCIIE 0x10 ~%MISC56%~ (8)
-	LPF ALTER_ITEM_HEADER 
-		INT_VAR 
+	LPF ALTER_ITEM_HEADER
+		INT_VAR
 			check_headers = 1
-		STR_VAR 
+		STR_VAR
 			icon = ~WISW1H04~
 	END
 
@@ -688,7 +688,7 @@ COPY ~Blackhearts/CRE/WIILLASE.cre~ ~override/WIILLASE.cre~
 	SAY DAMAGE @5
 	SAY DYING @6
 	SAY MORALE @7
-	SAY SELECT_COMMON1 @12 
+	SAY SELECT_COMMON1 @12
 	SAY SELECT_COMMON2 @8
 	SAY SELECT_COMMON3 @11
 	SAY SELECT_COMMON4 @9
@@ -709,7 +709,7 @@ COPY ~Blackhearts/CRE/WIILLAS1.cre~ ~override/WIILLAS1.cre~
 	SAY DAMAGE @5
 	SAY DYING @6
 	SAY MORALE @7
-	SAY SELECT_COMMON1 @12 
+	SAY SELECT_COMMON1 @12
 	SAY SELECT_COMMON2 @8
 	SAY SELECT_COMMON3 @11
 	SAY SELECT_COMMON4 @9
@@ -787,9 +787,9 @@ COPY ~Blackhearts/CRE/WIHOBG03.cre~ ~override/WIHOBG03.cre~
 	SAY NAME1 @3308
 	SAY NAME2 @3308
 WRITE_ASCII DEATHVAR ~WIHOBG03~ (32)
-	
+
 COPY_EXISTING ~ARDENO.cre~ ~override/ARDENO.cre~
-ADD_CRE_ITEM ~WIMISC04~ #0 #0 #0 ~IDENTIFIED~ ~INV~	
+ADD_CRE_ITEM ~WIMISC04~ #0 #0 #0 ~IDENTIFIED~ ~INV~
 
 COPY ~Blackhearts/CRE/WIBORT.cre~ ~override/WIBORT.cre~
 	SAY NAME1 @44
@@ -852,7 +852,7 @@ COPY ~Blackhearts/CRE/WIKRANCO.cre~ ~override/WIKRANCO.cre~
 	SAY NAME2 @55
 WRITE_ASCII DIALOG ~~ (8)
 WRITE_ASCII DEATHVAR ~WIKRANCO~ (32)
-	
+
 COPY ~Blackhearts/CRE/WIOWYN.cre~ ~override/WIOWYN.cre~
 	SAY NAME1 @56
 	SAY NAME2 @56
@@ -873,7 +873,7 @@ COPY ~Blackhearts/CRE/WISHADO1.cre~ ~override/WISHADO1.cre~
 	SAY NAME1 @61
 	SAY NAME2 @61
 WRITE_ASCII DEATHVAR ~WISHADO1~ (32)
-	
+
 COPY ~Blackhearts/CRE/WICOMM01.cre~ ~override/WICOMM01.cre~
 	SAY NAME1 @3311
 	SAY NAME2 @3311
@@ -912,7 +912,7 @@ COPY ~Blackhearts/CRE/WISPID03.cre~ ~override/WISPID03.cre~
 	SAY NAME1 @86
 	SAY NAME2 @86
 WRITE_ASCII DEATHVAR ~WISPID03~ (32)
-	
+
 COPY ~Blackhearts/CRE/WIAMARAN.cre~ ~override/WIAMARAN.cre~
 WRITE_ASCII DIALOG ~WIamaran~ (8)
 
@@ -989,7 +989,7 @@ ADD_CRE_ITEM ~POTN10~ #1 #0 #0 ~identified&unstealable~ ~qitem1~
 
 COPY ~Blackhearts/CRE/WIOGMA01.cre~ ~override/WIOGMA01.cre~
 	SAY NAME1 @96
-	SAY NAME2 @96 
+	SAY NAME2 @96
 WRITE_ASCII DIALOG ~WIyondak~ (8)
 WRITE_ASCII DEATHVAR ~WIYONDAK~ (32)
 WRITE_ASCII SCRIPT_OVERRIDE ~SHOUTDLG~ (8)
@@ -1036,7 +1036,7 @@ COPY ~Blackhearts/CRE/WIRWTHIF.cre~ ~override/WIRWTHI2.cre~
 	SAY NAME1 @100
 	SAY NAME2 @100
 // REPLACE_CRE_ITEM ~DAGG02~ #0 #0 #0 ~IDENTIFIED~ ~weapon2~ EQUIP
-	
+
 COPY ~Blackhearts/CRE/WIRWWIZ2.cre~ ~override/WIRWWIZ2.cre~
 	SAY NAME1 @101
 	SAY NAME2 @101
@@ -1165,7 +1165,7 @@ COPY ~Blackhearts/CRE/WISTOGOL.cre~ ~override/WISTOGOL.cre~
 WRITE_ASCII DEATHVAR ~WISTOGOL~ (32)
 
 COPY ~Blackhearts/CRE/WIICESAL.cre~ ~override/WIICESAL.cre~
-	SAY NAME1 @3320	
+	SAY NAME1 @3320
 	SAY NAME2 @3320
 
 COPY ~Blackhearts/CRE/WIICESCL.cre~ ~override/WIICESCL.cre~
@@ -1257,7 +1257,7 @@ COPY ~Blackhearts/items/WIBHSLET.itm~ ~override/WIBHSLET.itm~
 	SAY NAME2 @6089
 	SAY UNIDENTIFIED_DESC @6090
 	SAY DESC @6090
-	
+
 COPY_EXISTING ~bdmisc53.ITM~ ~override/WIBOOK07.itm~
     SAY NAME1 @6266
     SAY NAME2 @6266
@@ -1273,23 +1273,23 @@ COPY_EXISTING ~SCRLDRA.ITM~ ~override/WIMISC13.itm~
 COPY ~Blackhearts/items/WISW1H07.itm~ ~override/WISW1H07.itm~
     SAY NAME2 @6268
     SAY DESC @6269
-	
-COPY ~Blackhearts/items/WIDAGG01.itm~ ~override/WIDAGG01.itm~	
+
+COPY ~Blackhearts/items/WIDAGG01.itm~ ~override/WIDAGG01.itm~
     SAY NAME2 @6531
     SAY DESC @6532
 
-COPY ~Blackhearts/items/WISTAF02.itm~ ~override/WISTAF02.itm~	
+COPY ~Blackhearts/items/WISTAF02.itm~ ~override/WISTAF02.itm~
     SAY NAME2 @6533
     SAY DESC @6534
 
-COPY ~Blackhearts/items/WIBOOK08.itm~ ~override/WIBOOK08.itm~	
+COPY ~Blackhearts/items/WIBOOK08.itm~ ~override/WIBOOK08.itm~
     SAY NAME2 @6732
     SAY DESC @6733
-	
+
 COPY_EXISTING ~bdbooknj.ITM~ ~override/WIBOOK09.itm~
     SAY NAME2 @6734
     SAY DESC @6735
-	
+
 COPY_EXISTING ~bdure3a.ITM~ ~override/WIBOOK10.itm~
     SAY NAME2 @6736
     SAY DESC @6737
@@ -1315,7 +1315,7 @@ COPY_EXISTING ~MISC71.ITM~ ~override/WIBOOK13.itm~
 COPY_EXISTING ~WIBOOK04.ITM~ ~override/WIBOOK14.itm~
     SAY NAME2 @6748
     SAY DESC @6749
-	
+
 COPY_EXISTING ~bdbooknj.ITM~ ~override/WIBOOK15.itm~
     SAY NAME2 @6750
     SAY DESC @6751
@@ -1340,7 +1340,7 @@ COPY ~Blackhearts/items/WIBRAC01.itm~ ~override/WIBRAC01.itm~
     SAY NAME2 @7131
     SAY DESC @7132
 
-COPY ~Blackhearts/items/WIBOOT02.itm~ ~override/WIBOOT02.itm~	
+COPY ~Blackhearts/items/WIBOOT02.itm~ ~override/WIBOOT02.itm~
     SAY NAME2 @7134
     SAY DESC @7135
 
@@ -1485,11 +1485,11 @@ COPY ~Blackhearts/CRE/WIHARSP2.CRE~ ~override/WIHARSP2.CRE~
 
 COPY ~Blackhearts/Areas/SODAREAS~ ~override~
 
-EXTEND_TOP ~BD0109.bcs~ ~Blackhearts/Scripts/BD0109.baf~ 
-EXTEND_BOTTOM ~BD7100.bcs~ ~Blackhearts/Scripts/BD7100.baf~ 
+EXTEND_TOP ~BD0109.bcs~ ~Blackhearts/Scripts/BD0109.baf~
+EXTEND_BOTTOM ~BD7100.bcs~ ~Blackhearts/Scripts/BD7100.baf~
 EXTEND_TOP ~WIBH12.bcs~ ~Blackhearts/Scripts/WIBH12.baf~
-EXTEND_TOP ~BD3000.bcs~ ~Blackhearts/Scripts/BD3000.baf~ 
-EXTEND_TOP ~WIBH13.bcs~ ~Blackhearts/Scripts/WIBH13.baf~ 
+EXTEND_TOP ~BD3000.bcs~ ~Blackhearts/Scripts/BD3000.baf~
+EXTEND_TOP ~WIBH13.bcs~ ~Blackhearts/Scripts/WIBH13.baf~
 EXTEND_TOP ~WIBH17.bcs~ ~Blackhearts/Scripts/WIBH17.baf~
 EXTEND_TOP ~WIBH14.bcs~ ~Blackhearts/Scripts/WIBH14.baf~
 EXTEND_TOP ~WIBH15.bcs~ ~Blackhearts/Scripts/WIBH15.baf~
@@ -1500,13 +1500,13 @@ ADD_MAP_NOTE #1369 #943 ~red~ @6263
 
   LPF fj_are_structure
     INT_VAR
-    fj_type         = 2   
+    fj_type         = 2
     fj_box_left     = 1358
     fj_box_top      = 992
     fj_box_right    = 1461
     fj_box_bottom   = 1059
     fj_cursor_idx   = 42
-    fj_vertex_0     = 1358 + (992 << 16) 
+    fj_vertex_0     = 1358 + (992 << 16)
     fj_vertex_1     = 1461 + (992 << 16)
     fj_vertex_2     = 1461 + (1059 << 16)
     fj_vertex_3     = 1358 + (1059 << 16)
@@ -1516,17 +1516,17 @@ ADD_MAP_NOTE #1369 #943 ~red~ @6263
     fj_destination_area = WIBH11
     fj_destination_name = Entrance1
   END
- 
+
    LPF fj_are_structure
     INT_VAR
-    fj_loc_x       = 1503 
-    fj_loc_y       = 1056 
-    fj_orientation = 0  
+    fj_loc_x       = 1503
+    fj_loc_y       = 1056
+    fj_orientation = 0
     STR_VAR
     fj_structure_type = entrance
     fj_name           = EXITBH11
   END
-  
+
    LPF fj_are_structure
     INT_VAR
     fj_loc_x       = 1344
@@ -1537,14 +1537,14 @@ ADD_MAP_NOTE #1369 #943 ~red~ @6263
     fj_structure_type = animation
     fj_name           = WIBHD1
     fj_bam_resref     = WIBHD1
-  END	
+  END
 
 APPEND ~mastarea.2da~
 ~WIBH13  value~
 
 APPEND ~mastarea.2da~
 ~WIBH15  value~
-		
+
 COPY_EXISTING ~WIBH13.are~ ~override~
 		LPF ALTER_AREA_REGION
 			INT_VAR
@@ -1577,7 +1577,7 @@ PRINT ~Icons added to SoD map.
 			OUTER_SPRINT "game_worldmap" "sodmap"
 
 		INCLUDE ~%MOD_FOLDER%/lib/add_map_icons.tpa~ // sodmap.wmp isn't a v2 bam file so using oBG version.
-		
+
 	LAF ADD_MAP_ICONS
       INT_VAR
         icon_index = 0 // sequence (cycle) number of your first icon in your .bam, indexed from 0
@@ -1607,7 +1607,7 @@ PRINT ~Icons added to SoD map.
 			path_to_trans = EVAL ~%MOD_FOLDER%/tra/%LANGUAGE%/BHBG1worldmap.tra~
 			worldmap = EVAL ~%game_worldmap%~
 		END
-		
+
 END
 
 ACTION_IF GAME_IS ~eet~ THEN BEGIN
@@ -1618,7 +1618,7 @@ PRINT ~Icons added to EET map.
 			OUTER_SPRINT "game_worldmap" "worldmap"
 
 		INCLUDE ~%MOD_FOLDER%/lib/add_map_icons_ee.tpa~
-		
+
 	LAF ADD_MAP_ICONS_EE
       INT_VAR
         icon_index = 0 // sequence (cycle) number of your first icon in your .bam, indexed from 0
@@ -1637,7 +1637,7 @@ PRINT ~Icons added to EET map.
       END
 
 		INCLUDE ~%MOD_FOLDER%/lib/add_worldmap_tbl.tpa~
-		
+
 		LAF ADD_WORLDMAP_TBL
 			INT_VAR
 				verbose = 1
@@ -1659,7 +1659,7 @@ PRINT ~Icons assets in case BP-BGT-Worldmap will be installed.
 ~
 
 	ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
-  
+
 		COPY ~Worldmap/map_mods_areas.tbl~		~Worldmap~
 			APPEND_FILE ~Blackhearts/Worldmap/areas.tbl~
 
@@ -1672,7 +1672,7 @@ PRINT ~Icons assets in case BP-BGT-Worldmap will be installed.
 	END ELSE BEGIN
 
 		MKDIR ~Worldmap~
-	
+
 		COPY ~Blackhearts/Worldmap/areas.tbl~							~Worldmap/map_mods_areas.tbl~
 
 		COPY ~Blackhearts/Worldmap/links.tbl~							~Worldmap/map_mods_links.tbl~
