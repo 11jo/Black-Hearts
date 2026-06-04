@@ -264,7 +264,7 @@ For any issues had with the mod, make a report through github or contact me at m
 - Version 2.05
   	- EXTEND_TOP vs EXTEND_BOTTOM
   	- Correct mistake in previous version
-  	- Correct typo for Simplified Chinese by @Correct typo for Simplified Chinese
+  	- Correct typo for Simplified Chinese by @yoshimo0417
   	- Typos by @SonnePw, @visionok and @maurvir
 
 
